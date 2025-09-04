@@ -1,0 +1,22 @@
+meta {
+  name: criar mercadoria
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/v1/mercadoria
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+     "nome":"arroz",
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+}
